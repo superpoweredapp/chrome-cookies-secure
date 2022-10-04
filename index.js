@@ -64,7 +64,7 @@ function getDerivedKey(callback) {
 		keytar = require('keytar');
 		keytar.getPassword('Chrome Safe Storage', 'Chrome').then(function(chromePassword) {
 			crypto.pbkdf2(chromePassword, SALT, ITERATIONS, KEYLENGTH, 'sha1', callback);
-		});
+		}).catch((e) => callback(e));
 
 	} else if (process.platform === 'linux') {
 
