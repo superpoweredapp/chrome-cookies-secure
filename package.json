@@ -1,5 +1,5 @@
 {
-  "name": "chrome-cookies-secure",
+  "name": "@superpowered/chrome-cookies-secure",
   "version": "2.0.0",
   "description": "Extract encrypted Google Chrome cookies for a url on a Mac or Linux",
   "keywords": [
